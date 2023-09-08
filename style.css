@@ -254,10 +254,21 @@ p {
 }
 
 @media (min-width: 48em) {
+  .nav__container {
+    padding: 2rem 0 2rem 0;
+  }
+  .header ul {
+    background-color: #3fbeff;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 1.2rem;
+  }
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
+    width: auto;
   }
   .header .menu-icon {
     display: none;
