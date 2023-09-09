@@ -252,7 +252,84 @@ p {
 .pg_text {
   color: var(--Dark-blue);
 }
+/* Client testimonials */
+.testimonials {
+  padding: 60px 0 80px 0;
+}
+h3 {
+  text-transform: uppercase;
+  color: var(--Grayish-blue);
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
+}
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.client__img {
+  border-radius: 50%;
+  width: 85px;
+}
+.review {
+  color: var(--dark-grayish-blue);
+  padding-top: 40px;
+}
+.name {
+  color: var(--desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+}
+.occupation {
+  margin: 0;
+  padding: 0;
+}
 
+/* Gallery */
+.Gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery__img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0 90px 0;
+  background-color: #90d4c6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo {
+  height: 35px;
+}
+.footer_menu {
+  padding-top: 25px;
+}
+.footer_menu ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.footer_menu ul li a {
+  text-decoration: none;
+  color: var(--Dark-moderate-cyan);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+.footer__links {
+  padding-top: 60px;
+  letter-spacing: 1.5rem;
+}
 @media (min-width: 48em) {
   .nav__container {
     padding: 2rem 0 2rem 0;
