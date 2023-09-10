@@ -13,7 +13,12 @@
   --grayish-blue: hsl(232, 10%, 55%);
 }
 body {
+  background-color: #3fbeff;
   margin: 0;
+}
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
@@ -175,6 +180,10 @@ h1 {
   align-items: center;
   padding: 16px 16px 30px 16px;
 }
+.Transform,
+.Standout {
+  background-color: white;
+}
 h2 {
   margin: 40px 20px 10px 20px;
   color: var(--desaturated-blue);
@@ -208,22 +217,21 @@ p {
 .learnmore_btn::after {
   content: "";
   position: absolute;
-  bottom: -8%;
+  bottom: 5%;
   left: -2%;
-  height: 13px;
+  height: 10px;
   width: 105%;
-  opacity: 0.25;
+  opacity: 0.2;
   border-radius: 28px;
-  z-index: -1;
+  z-index: 1;
   transition: all 0.2s ease-in-out;
 }
 .yellow:hover::after {
-  opacity: 1;
+  opacity: 0.6;
 }
 .red:hover::after {
-  opacity: 1;
+  opacity: 0.6;
 }
-
 /* Service */
 .text__img {
   width: 100%;
@@ -255,6 +263,7 @@ p {
 /* Client testimonials */
 .testimonials {
   padding: 60px 0 80px 0;
+  background-color: white;
 }
 h3 {
   text-transform: uppercase;
@@ -302,7 +311,7 @@ h3 {
 
 /* Footer */
 footer {
-  padding: 50px 0 90px 0;
+  padding: 60px 0 90px 0;
   background-color: #90d4c6;
   display: flex;
   flex-direction: column;
@@ -330,7 +339,31 @@ footer {
   padding-top: 60px;
   letter-spacing: 1.5rem;
 }
+.attribution {
+  margin-top: 50px;
+  color: var(--Dark-desaturated-cyan);
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Dark-desaturated-cyan);
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media (max-width: 48em) {
+  .grid2,
+  .grid4 {
+    display: none;
+  }
+  .gallery__img__desktop {
+    display: none;
+  }
+}
+
 @media (min-width: 48em) {
+  .header {
+    position: static;
+  }
   .nav__container {
     padding: 2rem 0 2rem 0;
   }
@@ -341,6 +374,9 @@ footer {
     margin: 0 auto;
     gap: 1.2rem;
   }
+  .header li a {
+    color: white;
+  }
   .header .menu {
     clear: none;
     float: right;
@@ -349,5 +385,84 @@ footer {
   }
   .header .menu-icon {
     display: none;
+  }
+  .contact__btn {
+    background-color: white;
+  }
+  .contact__btn:hover {
+    background-color: #6fcfff;
+    color: white;
+    cursor: pointer;
+  }
+  .hero {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+  .hero__item {
+    padding-top: 150px;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+  .hero__item h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .arrow {
+    padding-top: 4rem;
+  }
+  .egg__img__mobile,
+  .glass__img__mobile {
+    display: none;
+  }
+  .grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid2,
+  .grid4 {
+    width: 100%;
+    height: 100%;
+  }
+  .Transform,
+  .Standout {
+    padding: 6rem;
+  }
+  .des {
+    padding: 2rem;
+    align-items: first baseline;
+  }
+  .des p,
+  .des h2 {
+    text-align: left;
+  }
+  .graphic__design {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+  }
+  .photography {
+    background-image: url(./images/desktop/image-photography.jpg);
+  }
+  .testimonials {
+    padding: 150px 100px;
+  }
+  .testimonials__flexbox {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    margin-top: 50px;
+  }
+  .gallery__img {
+    display: none;
+  }
+  .Gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .gallery__img__desktop {
+    width: 100%;
   }
 }
